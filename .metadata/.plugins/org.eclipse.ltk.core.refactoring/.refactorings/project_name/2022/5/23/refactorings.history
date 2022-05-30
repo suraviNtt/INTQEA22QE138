@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;project_name.reders&apos; to &apos;project_name.readers&apos;&#x0D;&#x0A;- Original project: &apos;project_name&apos;&#x0D;&#x0A;- Original element: &apos;project_name/src/main/java/project_name.reders&apos;&#x0D;&#x0A;- Renamed element: &apos;project_name/src/main/java/project_name.readers&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;project_name.reders&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;project_name.reders" name="project_name.readers" qualified="false" references="true" stamp="1653921381706" textual="false" version="1.0"/>
+</session>

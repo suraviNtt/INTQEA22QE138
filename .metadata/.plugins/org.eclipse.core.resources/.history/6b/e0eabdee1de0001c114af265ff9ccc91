@@ -1,0 +1,25 @@
+package project_name;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class GoogleSearchPageTest {
+	
+	final private static String url = "https://www.google.com";
+
+	public static void main(String[] args) {
+		//Driver Setup
+		WebDriverManager.chromedriver().setup();
+		// Driver declaration
+		WebDriver driver = new ChromeDriver();
+		//maximize the window size
+		driver.manage().window().maximize();
+		//open the application
+		driver.get(url);
+		//close the browser window
+		driver.close();
+	
+	}
+}

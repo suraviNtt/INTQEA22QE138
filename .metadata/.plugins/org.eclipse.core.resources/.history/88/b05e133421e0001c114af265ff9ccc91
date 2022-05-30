@@ -1,0 +1,14 @@
+package project_name.reders;
+
+import java.util.Properties;
+
+public class PropertyReader {
+
+	public static void main(String[] args) {
+		
+		Properties prop = new Properties();
+		
+		String currentProjectLocation = System.getProperty("user.dir");
+		System.out.println(currentProjectLocation);
+	}
+}

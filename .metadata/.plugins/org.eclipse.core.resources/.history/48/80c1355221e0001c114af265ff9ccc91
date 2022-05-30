@@ -1,0 +1,21 @@
+package project_name.reders;
+
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+import java.util.Properties;
+
+public class PropertyReader {
+
+	public static void main(String[] args) throws IOException {
+		
+		Properties prop = new Properties();
+		
+		String currentProjectLocation = System.getProperty("user.dir");
+		String  propertiesFileLocation = "/src/main/resources/config.properties";
+		String filepath = currentProjectLocation + propertiesFileLocation;
+		Reader file = new FileReader(filepath);
+		prop.load(file);
+	}
+}

@@ -1,0 +1,17 @@
+package project_name.reders;
+
+public class FileReaders {
+	
+	private String getbasePath() {
+		return System.getProperty("user.dir");
+	}
+
+	public String getMainResourcesFilepath(String filename , String filetype) {
+		return getbasePath() + "/src/main/resources/"+filename+"."+filetype;
+	}
+
+	public String getTestResourcesFilepath(String filename, String filetype) {
+		return getbasePath() + "/src/test/resources/"+filename+"."+filetype;
+	}
+
+}
