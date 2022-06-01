@@ -1,14 +1,20 @@
 package project_name.utilities;
 
+import java.time.Duration;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import project_name.readers.PropertyReader;
 
 public class Commons {
 
 	PropertyReader propertyReader;
+	WebDriverWait wait;
 
 	/**
 	 * to get hard wait
@@ -35,7 +41,7 @@ public class Commons {
 			BrowserSetup browserSetup = new BrowserSetup();
 			driver = browserSetup.getDriver(propertyReader.getBrowserName());
 			driver.manage().window().maximize();
-
+			driver.manage().timeouts().implicitlyWait(propertyReader.getImplicitWait(), TimeUnit.SECONDS);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -43,6 +49,11 @@ public class Commons {
 		return driver;
 
 	}
+	
+	
+	
+	
+	
 
 	/**
 	 * to open the application
@@ -58,7 +69,36 @@ public class Commons {
 			e.printStackTrace();
 		}
 	}
-
+	
+	/**
+	 * 
+	 * @param driver
+	 * @param element
+	 */
+	public void checkElementsVisibility(WebDriver driver , WebElement element) {
+		try {
+			wait = new WebDriverWait(driver,Duration.ofSeconds(getExplicitWait()));
+			wait.until(ExpectedConditions.visibilityOf(element));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public void clickOnWebElement(WebDriver driver, WebElement element) {
+		try {
+			
+			int time = getExplicitWait();
+			wait = new WebDriverWait(driver,Duration.ofSeconds(time));
+			if(wait.until(ExpectedConditions.elementToBeClickable(element)) != null) {
+				element.click();
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	/**
 	 * close the browser
 	 * 
@@ -76,4 +116,16 @@ public class Commons {
 	public void closeWindow(WebDriver driver) {
 		driver.close();
 	}
+	
+	private int getExplicitWait() {
+		try {
+			propertyReader = new PropertyReader();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return propertyReader.getExplicitWait();
+		
+	}
 }
+

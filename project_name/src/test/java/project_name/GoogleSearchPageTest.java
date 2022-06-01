@@ -1,11 +1,12 @@
 package project_name;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import project_name.utilities.Commons;
 
 public class GoogleSearchPageTest {
@@ -23,8 +24,8 @@ public class GoogleSearchPageTest {
 		WebElement searchBar = driver.findElement(By.name("q"));
 		// send srach text
 		searchBar.sendKeys("Selenium");
-		commons.getHardwait();
 		WebElement autoSearchResults = driver.findElement(By.xpath("(//ul[@class='G43f7e']//li[@class='sbct'])[1]"));
+		commons.checkElementsVisibility(driver, autoSearchResults);
 		// clicking on element
 		autoSearchResults.click();
 		commons.getHardwait();
