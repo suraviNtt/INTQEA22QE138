@@ -20,6 +20,10 @@ public class FileReaders {
 		return getbasePath() + "/src/test/resources/"+filename+"."+filetype;
 	}
 	
+	public String getTestOutputLocation(String filename) {
+		return getbasePath() + "/test_output/"+filename+".png";
+	}
+	
 	public FileReader readFile(String filepath) {
 		Reader file = null;
 		try {

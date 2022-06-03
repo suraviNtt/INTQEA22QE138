@@ -86,6 +86,11 @@ public class Commons {
 		
 	}
 	
+	/**
+	 * 
+	 * @param driver
+	 * @param element
+	 */
 	public void clickOnWebElement(WebDriver driver, WebElement element) {
 		try {
 			
@@ -93,6 +98,26 @@ public class Commons {
 			wait = new WebDriverWait(driver,Duration.ofSeconds(time));
 			if(wait.until(ExpectedConditions.elementToBeClickable(element)) != null) {
 				element.click();
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 
+	 * @param driver
+	 * @param element
+	 * @param text
+	 */
+	public void enterTextWebElement(WebDriver driver, WebElement element, String text) {
+		try {
+			
+			int time = getExplicitWait();
+			wait = new WebDriverWait(driver,Duration.ofSeconds(time));
+			if(wait.until(ExpectedConditions.visibilityOf(element)) != null) {
+				element.sendKeys(text);;
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
