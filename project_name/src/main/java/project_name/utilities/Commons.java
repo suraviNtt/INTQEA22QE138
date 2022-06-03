@@ -1,14 +1,20 @@
 package project_name.utilities;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import project_name.readers.FileReaders;
 import project_name.readers.PropertyReader;
 
 public class Commons {
@@ -142,6 +148,10 @@ public class Commons {
 		driver.close();
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	private int getExplicitWait() {
 		try {
 			propertyReader = new PropertyReader();
@@ -150,6 +160,33 @@ public class Commons {
 			e.printStackTrace();
 		}
 		return propertyReader.getExplicitWait();
+		
+	}
+	
+	/**
+	 * 
+	 * @param driver
+	 * @param fileName
+	 */
+	public void takescreenShot(WebDriver driver , String fileName) {
+		 TakesScreenshot scrShot =((TakesScreenshot) driver);
+
+	        //Call getScreenshotAs method to create image file
+
+	                File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+
+	            //Move image file to new destination
+	                FileReaders file = new FileReaders();
+	                File DestFile=new File(file.getTestOutputLocation(fileName));
+
+	                //Copy file at destination
+
+	                try {
+						FileUtils.copyFile(SrcFile, DestFile);
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 		
 	}
 }
