@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-14T13:01:53 IST" name="Default suite" finished-at="2022-06-14T13:01:53 IST" duration-ms="168">
+    <groups>
+    </groups>
+    <test started-at="2022-06-14T13:01:53 IST" name="Default test" finished-at="2022-06-14T13:01:53 IST" duration-ms="168">
+      <class name="project_name.tests.ScenarioName">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="beforeTest" finished-at="2022-06-14T13:01:53 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="beforeMethod" finished-at="2022-06-14T13:01:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testCaseHeading()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="testCaseHeading" finished-at="2022-06-14T13:01:53 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseHeading -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="beforeMethod" finished-at="2022-06-14T13:01:53 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testCaseHeading1()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="testCaseHeading1" finished-at="2022-06-14T13:01:53 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseHeading1 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="beforeMethod" finished-at="2022-06-14T13:01:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testCaseHeading2()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="testCaseHeading2" finished-at="2022-06-14T13:01:53 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseHeading2 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="beforeMethod" finished-at="2022-06-14T13:01:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testCaseHeading3()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="testCaseHeading3" finished-at="2022-06-14T13:01:53 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseHeading3 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="beforeMethod" finished-at="2022-06-14T13:01:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testCaseHeading4()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="testCaseHeading4" finished-at="2022-06-14T13:01:53 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseHeading4 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="afterTest" finished-at="2022-06-14T13:01:53 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- project_name.tests.ScenarioName -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
