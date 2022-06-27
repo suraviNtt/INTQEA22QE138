@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<!-- Class wise -->
+		<classes> <!-- <class name="project_name.tests.ScenarioName"/> -->
+			<class name="project_name.GoogleSearchPageTest" />
+		</classes>
+		<!-- Pakage wise -->
+		<!-- <packages> <package name="project_name.tests" /> </packages> -->
+
+
+		<!-- Method wise -->
+		<!-- <method-selectors> <method-selector> <selector-class name=""> <methods></methods> 
+			</selector-class> </method-selector> </method-selectors> -->
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

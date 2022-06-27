@@ -1,0 +1,10 @@
+package project_name.utilities;
+
+import com.aventstack.extentreports.ExtentReports;
+
+public class ReportProperties {
+
+	public void createFile() {
+		ExtentReports report = new ExtentReports();
+	}
+}

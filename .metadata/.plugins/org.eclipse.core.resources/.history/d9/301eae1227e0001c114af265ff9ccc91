@@ -1,6 +1,0 @@
-#Global properties file
-browser=chorme
-url=https://www.google.com
-hardWait=2000
-implicitWait=5
-explicitWait=8

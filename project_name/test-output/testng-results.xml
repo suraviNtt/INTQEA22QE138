@@ -1,61 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-14T13:01:53 IST" name="Default suite" finished-at="2022-06-14T13:01:53 IST" duration-ms="168">
+  <suite started-at="2022-06-27T15:37:44 IST" name="Default suite" finished-at="2022-06-27T15:38:26 IST" duration-ms="42015">
     <groups>
     </groups>
-    <test started-at="2022-06-14T13:01:53 IST" name="Default test" finished-at="2022-06-14T13:01:53 IST" duration-ms="168">
-      <class name="project_name.tests.ScenarioName">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="beforeTest" finished-at="2022-06-14T13:01:53 IST" duration-ms="24" status="PASS">
+    <test started-at="2022-06-27T15:37:44 IST" name="Default test" finished-at="2022-06-27T15:38:26 IST" duration-ms="42015">
+      <class name="project_name.GoogleSearchPageTest">
+        <test-method is-config="true" signature="beforTest()[pri:0, instance:project_name.GoogleSearchPageTest@298a5e20]" started-at="2022-06-27T15:37:44 IST" name="beforTest" finished-at="2022-06-27T15:37:44 IST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="beforeMethod" finished-at="2022-06-14T13:01:53 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- beforTest -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:project_name.GoogleSearchPageTest@298a5e20]" started-at="2022-06-27T15:37:44 IST" name="openApplication" finished-at="2022-06-27T15:37:51 IST" duration-ms="6121" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testCaseHeading()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="testCaseHeading" finished-at="2022-06-14T13:01:53 IST" duration-ms="12" status="PASS">
+        </test-method> <!-- openApplication -->
+        <test-method signature="googleSearchSelenium()[pri:0, instance:project_name.GoogleSearchPageTest@298a5e20]" started-at="2022-06-27T15:37:51 IST" name="googleSearchSelenium" finished-at="2022-06-27T15:37:55 IST" duration-ms="4964" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCaseHeading -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="beforeMethod" finished-at="2022-06-14T13:01:53 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- googleSearchSelenium -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:project_name.GoogleSearchPageTest@298a5e20]" started-at="2022-06-27T15:37:55 IST" name="teardown" finished-at="2022-06-27T15:38:01 IST" duration-ms="5245" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testCaseHeading1()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="testCaseHeading1" finished-at="2022-06-14T13:01:53 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:project_name.GoogleSearchPageTest@298a5e20]" started-at="2022-06-27T15:38:01 IST" name="openApplication" finished-at="2022-06-27T15:38:04 IST" duration-ms="3745" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCaseHeading1 -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="beforeMethod" finished-at="2022-06-14T13:01:53 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- openApplication -->
+        <test-method signature="googleSearchSeleniumBook()[pri:0, instance:project_name.GoogleSearchPageTest@298a5e20]" started-at="2022-06-27T15:38:04 IST" name="googleSearchSeleniumBook" finished-at="2022-06-27T15:38:10 IST" duration-ms="5384" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//ul[@class='G43f7ed']//li[@class='sbct'])[1]"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-7PTRHU1', ip: '192.168.0.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a43dd6b698a68582530fe36f99e530e, findElement {using=xpath, value=(//ul[@class='G43f7ed']//li[@class='sbct'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64220}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64220/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a43dd6b698a68582530fe36f99e530e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//ul[@class='G43f7ed']//li[@class='sbct'])[1]"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-7PTRHU1', ip: '192.168.0.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a43dd6b698a68582530fe36f99e530e, findElement {using=xpath, value=(//ul[@class='G43f7ed']//li[@class='sbct'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64220}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64220/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a43dd6b698a68582530fe36f99e530e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at project_name.GoogleSearchPageTest.googleSearchSeleniumBook(GoogleSearchPageTest.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testCaseHeading2()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="testCaseHeading2" finished-at="2022-06-14T13:01:53 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- googleSearchSeleniumBook -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:project_name.GoogleSearchPageTest@298a5e20]" started-at="2022-06-27T15:38:10 IST" name="teardown" finished-at="2022-06-27T15:38:14 IST" duration-ms="4256" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCaseHeading2 -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="beforeMethod" finished-at="2022-06-14T13:01:53 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:project_name.GoogleSearchPageTest@298a5e20]" started-at="2022-06-27T15:38:14 IST" name="openApplication" finished-at="2022-06-27T15:38:17 IST" duration-ms="3234" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testCaseHeading3()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="testCaseHeading3" finished-at="2022-06-14T13:01:53 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- openApplication -->
+        <test-method signature="googleSearchSeleniumDoc()[pri:0, instance:project_name.GoogleSearchPageTest@298a5e20]" started-at="2022-06-27T15:38:17 IST" name="googleSearchSeleniumDoc" finished-at="2022-06-27T15:38:22 IST" duration-ms="4326" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCaseHeading3 -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="beforeMethod" finished-at="2022-06-14T13:01:53 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- googleSearchSeleniumDoc -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:project_name.GoogleSearchPageTest@298a5e20]" started-at="2022-06-27T15:38:22 IST" name="teardown" finished-at="2022-06-27T15:38:26 IST" duration-ms="4350" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testCaseHeading4()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="testCaseHeading4" finished-at="2022-06-14T13:01:53 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCaseHeading4 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:project_name.tests.ScenarioName@5ab956d7]" started-at="2022-06-14T13:01:53 IST" name="afterTest" finished-at="2022-06-14T13:01:53 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- project_name.tests.ScenarioName -->
+        </test-method> <!-- teardown -->
+      </class> <!-- project_name.GoogleSearchPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -24,6 +24,10 @@ public class FileReaders {
 		return getbasePath() + "/test_output/"+filename+".png";
 	}
 	
+	public String getTestReportLocation() {
+		return getbasePath() + "/reports";
+	}
+	
 	public FileReader readFile(String filepath) {
 		Reader file = null;
 		try {
@@ -46,4 +50,5 @@ public class FileReaders {
 		return file;
 	}
 
+	
 }

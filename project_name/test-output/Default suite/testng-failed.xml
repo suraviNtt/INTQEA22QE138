@@ -5,6 +5,7 @@
     <classes>
       <class name="project_name.GoogleSearchPageTest">
         <methods>
+          <include name="beforTest"/>
           <include name="openApplication"/>
           <include name="teardown"/>
           <include name="googleSearchSeleniumBook"/>
